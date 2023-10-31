@@ -1,3 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+:root {
+    font-family: 'Roboto', sans-serif;
+    --padding: 2.5rem;
+    --form-height: 400px;
+    --fieldset-height: 65%;
+}
 body {
     display: flex;
     flex-direction: row;
@@ -7,12 +21,99 @@ header {
     background-image: url('https://images.unsplash.com/photo-1585202900225-6d3ac20a6962?auto=format&fit=crop&q=80&w=1862&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
     display: flex;
     flex: 1;
+    background-size: cover;
 }
 
 main {
     display: flex;
     flex: 2;
     flex-direction: column;
-    background-color: '#f9fafb';
+    background-color: #f9fafb;
 }
 
+p {
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+legend {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.main-text {
+    height: 300px;
+    width: 75%;
+    padding-left: var(--padding);
+}
+
+.main-text > p {
+    margin-top: 20%;
+}
+
+fieldset {
+    border-style: none;
+}
+
+
+form {
+    height: var(--form-height);
+}
+
+.fieldset-container {
+    display: flex;
+    background-color: white;
+    height: var(--fieldset-height); 
+    box-shadow: 0 5px 5px lightgrey;
+}
+
+fieldset {
+    padding-left: var(--padding);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 60%;
+    height: 100%;
+}
+
+fieldset > div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.input-container {
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    border: 1px solid #E5E7EB;
+    border-radius: 3px;
+    width: 220px;
+    height: 26px;
+}
+
+label {
+    font-size: 10px;
+    font-weight: bold;
+}
+
+.create-account {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    padding-left: var(--padding);
+    height: calc(var(--form-height) - var(--fieldset-height));
+}
+
+button {
+    background-color: #596D48;
+    color: white;
+    border-style: none;
+    border-radius: 6px;
+    font-weight: bold;
+    width: 160px;
+    height: 40px;
+    font-size: 0.9rem;
+}

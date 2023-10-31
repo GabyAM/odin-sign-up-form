@@ -16,32 +16,58 @@
     </header>
     <main>
         <section class="main-text">
-            <p>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up now to get started.</p>
-            <h3>You <em>know</em> you want to</h3>
+            <p>
+                This is not a real online service! You know you need something like this in your life to help you
+                realize your deepest dreams. Sign up now to get started.
+                <br><br>You <em>know</em> you want to.
+            </p>
         </section>
+
         <section>
             <form>
-                <fieldset>
-                    <legend>Let's do this!</legend>
-                    <label for="first-name">First name</label>
-                    <input type="text" name="first-name">
-                    <label for="last-name">Last name</label>
-                    <input type="text" name="last-name">
-
-                    <label for="email">Email</label>
-                    <input type="email" name="email" id="email">
-                    <label for="phone">Phone number</label>
-                    <input type="number" name="phone" id="phone">
-
-                    <label for="password">Password</label>
-                    <input type="text" name="password" id="password">
-                    <label for="password-confirm">Confirm password</label>
-                    <input type="text" name="password-confirm" id="password-confirm">
-                </fieldset>
-                <button>Create account</button>
+                <div class="fieldset-container">
+                    <fieldset>
+                        <div>
+                            <legend>Let's do this!</legend>
+                        </div>
+                        <div>
+                            <div class="input-container">
+                                <label for="first-name">FIRST NAME</label>
+                                <input type="text" name="first-name" id="first-name">
+                            </div>
+                            <div class="input-container">
+                                <label for="last-name">LAST NAME</label>
+                                <input type="text" name="last-name" id="last-name">
+                            </div>
+                        </div>
+                        <div>
+                            <div class="input-container">
+                                <label for="email">EMAIL</label>
+                                <input type="email" name="email" id="email">
+                            </div>
+                            <div class="input-container">
+                                <label for="phone">PHONE NUMBER</label>
+                                <input type="number" name="phone" id="phone">
+                            </div>
+                        </div>
+                        <div>
+                            <div class="input-container">
+                                <label for="password">PASSWORD</label>
+                                <input type="text" name="password" id="password">
+                            </div>
+                            <div class="input-container">
+                                <label for="password-confirm">CONFIRM PASSWORD</label>
+                                <input type="text" name="password-confirm" id="password-confirm">
+                            </div>
+                        </div>
+                    </fieldset>
+                </div>
+                <div class="create-account">
+                    <button>Create account</button>
+                    <small>Already have an account? <a>Log in</a></small>
+                </div>
             </form>
         </section>
-        <small>Already have an account? <a>Log in</a></small>
     </main>
 </body>
 </html>
