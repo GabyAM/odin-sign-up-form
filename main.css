@@ -130,9 +130,20 @@ input {
     height: 26px;
 }
 
+.error {
+    outline: none;
+    border-color: red;
+}
+
+input:focus {
+    outline: none;
+    border-color: #0000FF;
+}
+
 label {
     font-size: 10px;
     font-weight: bold;
+    letter-spacing: 1px;
 }
 
 .create-account {
