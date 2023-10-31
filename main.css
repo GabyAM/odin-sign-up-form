@@ -37,6 +37,10 @@ header img{
     width: auto;
 }
 
+header small {
+    margin-bottom: 6px;
+}
+
 .logo-section {
     width: 100%;
     background-color: rgba(0,0,0,0.4);
@@ -153,6 +157,12 @@ label {
     gap: 20px;
     padding-left: var(--padding);
     height: calc(var(--form-height) - var(--fieldset-height));
+}
+
+.create-account a {
+    font-weight: 700;
+    text-decoration: none;
+    color: #596D48;
 }
 
 button {

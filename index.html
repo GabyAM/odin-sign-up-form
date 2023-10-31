@@ -53,21 +53,23 @@
                         <div>
                             <div class="input-container">
                                 <label for="password">PASSWORD*</label>
-                                <input type="text" name="password" id="password" class="error" required>
+                                <input type="text" name="password" id="password" class="error" pattern=".{5,}" required>
+                                <small style="color: red;" class="password-error">* Passwords do not match</small>
                             </div>
                             <div class="input-container">
                                 <label for="password-confirm">CONFIRM PASSWORD*</label>
-                                <input type="text" name="password-confirm" id="password-confirm" class="error" required>
+                                <input type="text" name="password-confirm" id="password-confirm" class="error" pattern=".{5,}" required>
                             </div>
                         </div>
                     </fieldset>
                 </div>
                 <div class="create-account">
                     <button>Create account</button>
-                    <small>Already have an account? <a>Log in</a></small>
+                    <small>Already have an account? <a href="#">Log in</a></small>
                 </div>
             </form>
         </section>
     </main>
 </body>
+<script src="index.js"></script>
 </html>
